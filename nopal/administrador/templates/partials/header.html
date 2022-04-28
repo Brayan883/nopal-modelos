@@ -1,0 +1,37 @@
+{% load static %}
+<header>
+    <div class="d-grid" id="br-inferior">
+        <div class="row container-fluid p-0 m-0">
+            <div class="col d-flex ps-5">
+                <img class="logo  " src="  {% static 'img/ElNopal.png' %}  " width="250px" alt="logo">
+            </div>
+            <div class="col container-fluid d-flex justify-content-center align-items-center px-0" id='logos_admin'>
+                <figure class="d-flex flex-column px-4">
+                    <img src=" {% static 'img/user.svg' %} " class="rounded mx-auto d-block" width="45" alt="">
+                    <span>Administrador</span>
+                </figure>
+                <figure class="d-flex flex-column align-items-center px-4">
+                    <img src=" {% static 'img/exit.svg' %} " class="rounded mx-auto d-block" width="45" alt="">
+                    <span>Salir</span>
+                </figure>
+                <figure class="d-flex flex-column px-4">
+                    <img src=" {% static 'img/help.svg' %} " class="rounded mx-auto d-block" width="45" alt="">
+                    <span>Ayuda</span>
+                </figure>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link"  href=" {% url 'admin_categoria' %} "> Categoria </a>
+          <a class="nav-link" href=" {% url 'admin_producto' %} ">Producto</a>
+        </div>
+      </div>
+    </div>
+  </nav>

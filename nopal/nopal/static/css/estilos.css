@@ -1,0 +1,26 @@
+html{
+    height:100%;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    min-height: 100%;
+}
+footer{
+    margin-top: auto;
+}
+textarea{
+    resize: none !important ;
+    color: rgb(240, 255, 255);
+}
+#footeradmin{
+    background-color: rgb(34, 48, 22);
+}
+.color_texto_admin{
+    color: rgb(240, 255, 255);
+}
+@media screen  and (max-width:425px) {
+    #logos_admin{
+        margin-top: 10px !important;
+    }
+}
